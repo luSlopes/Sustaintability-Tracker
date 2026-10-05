@@ -1,5 +1,6 @@
 export const RAMOS = [
-  { value: "tecnologia", label: "Tecnologia" },
+  { value: "cosméticos", label: "Cosméticos" },
   { value: "agricultura", label: "Agricultura" },
-  { value: "energia", label: "Energia" },
+  { value: "alimentos", label: "Alimentos" },
+  { value: "indústria", label: "Indústria" },
 ] as const;

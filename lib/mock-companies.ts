@@ -9,7 +9,7 @@ export const companies = [
     descricao: "Cosméticos com uso de ingredientes da sociobiodiversidade",
     cidade: "Cajamar",
     estado: "SP",
-    ramos: null,
+    ramos: ["Cosméticos"],
   },
   {
     cnpj: "16.404.287/0001-55",
@@ -19,7 +19,7 @@ export const companies = [
     descricao: "Celulose e papel a partir de florestas plantadas",
     cidade: "Salvador",
     estado: "BA",
-    ramos: null,
+    ramos: ["Agricultura"],
   },
   {
     cnpj: "89.637.490/0001-45",
@@ -29,7 +29,7 @@ export const companies = [
     descricao: "Papéis e embalagens de papelão ondulado",
     cidade: "São Paulo",
     estado: "SP",
-    ramos: null,
+    ramos: ["Agricultura"],
   },
   {
     cnpj: "42.150.391/0001-70",
@@ -40,7 +40,7 @@ export const companies = [
       "Resinas termoplásticas, incluindo polietileno de origem renovável",
     cidade: "Camaçari",
     estado: "BA",
-    ramos: null,
+    ramos: ["Indústria"],
   },
   {
     cnpj: "07.526.557/0001-00",
@@ -51,7 +51,7 @@ export const companies = [
       "Bebidas, com foco em embalagens retornáveis e uso eficiente de água",
     cidade: "São Paulo",
     estado: "SP",
-    ramos: null,
+    ramos: ["Alimentos"],
   },
 ];
 
