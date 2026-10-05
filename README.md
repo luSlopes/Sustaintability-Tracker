@@ -112,6 +112,7 @@ erDiagram
         VARCHAR2_200 site_url "NOT NULL"
         VARCHAR2_100 email
         VARCHAR2_500 descricao
+        VARCHAR_50 ramo "NOT NULL"
         NUMBER id_cidade FK "NOT NULL"
     }
 
