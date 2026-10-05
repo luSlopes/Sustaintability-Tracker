@@ -92,6 +92,8 @@ Definidas em `.env.local` (esse arquivo **não** deve ser versionado):
 
 ## 3. Modelagem dos dados
 
+
+
 ### 3.1 Diagrama entidade-relacionamento
 
 ```mermaid
@@ -139,8 +141,26 @@ erDiagram
         VARCHAR2_18 cnpj FK "NOT NULL"
     }
 ```
+### 3.2 Modelo Relacional
 
-### 3.2 Script de criação (DDL)
+```
+CIDADE(id_cidade, nome, estado, pais)
+
+EMPRESA(cnpj, razao_social, site_url, email, descricao, id_cidade)
+    id_cidade referencia CIDADE
+
+PRATICA_SUSTENTAVEL(id_pratica, nome, descricao, categoria, meta_ods)
+
+ADOTA(cnpj, id_pratica)
+    cnpj referencia EMPRESA
+    id_pratica referencia PRATICA_SUSTENTAVEL
+
+OFERTA(id_oferta, nome, descricao, categoria, tipo, cnpj)
+    cnpj referencia EMPRESA
+
+```
+
+### 3.3 Script de criação (DDL)
 
 ```sql
 CREATE TABLE cidade (
